@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- link js -->
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <!-- Rating state start -->
+        <div class="rating-state">
+          <div class="card-icon">
+            <img src="./images/icon-star.svg" alt="star svg" />
+          </div>
+          <div class="card-title">
+            <h1>How did we do?</h1>
+          </div>
+          <div class="card-text">
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="stars-wrapper">
+            <button class="icon-btn" data-rating-btn="btn1">1</button>
+
+            <button class="icon-btn" data-rating-btn="btn2">2</button>
+
+            <button class="icon-btn" data-rating-btn="btn3">3</button>
+
+            <button class="icon-btn" data-rating-btn="btn4">4</button>
+
+            <button class="icon-btn" data-rating-btn="btn5">5</button>
+          </div>
+          <button class="submit-btn">Submit</button>
+        </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <div class="rated-state hidden">
+          <img src="./images/illustration-thank-you.svg" alt="card-img" />
+          <p class="card-subtitle">
+            You selected <span data-rated-value>5</span>
+            out of 5
+          </p>
+          <h2 class="card-title">Thank you!</h2>
+          <p class="card-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
